@@ -39,20 +39,21 @@
 }
 
 input[type=text]:focus {
-  border: 3px solid #555;
+  border: 3px solid black;
 }
 
 
-.submit_button {
+#submit_button {
   display: flex;
   align-self: center;
   border-radius: 10px;
   border: 5px solid black;
   margin: 20px;
-  -webkit-transition: 0.5s;
+  -webkit-transition: 0.9s;
   transition: 0.5s;
   outline: none;
- 
+ }
 
-
+ #submit_button:focus {
+  border: 3px solid #ccc;
 }

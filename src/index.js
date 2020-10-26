@@ -1,14 +1,14 @@
-import "./styles.css";
+import './styles.css';
 import header from './header';
 import weather from './weather';
+import app from './app';
 
-const app = () => {
-    const content = document.getElementById('container');
-    content.append(header(), weather());
+const apps = () => {
+  const content = document.getElementById('container');
+  content.append(header(), weather());
+  app()
   
-   
-    
-  };
-  
-  
-  app();
+};
+
+
+apps();
