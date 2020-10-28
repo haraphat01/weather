@@ -1,7 +1,7 @@
 # weather
 
 
-This is a weather app to check the weather condition of any location, the user also have the opportunity to select Celsius	or Fahrenheit.
+This is a weather app that is used to check the weather condition of any location, the user also has the opportunity to select Celsius or Fahrenheit.
 
 ## Built With
 This project development was achieved using the following technologies:
