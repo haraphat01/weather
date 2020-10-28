@@ -43,7 +43,7 @@ input[type=text]:focus {
 }
 
 
-#submit_button {
+.submit_button {
   display: flex;
   align-self: center;
   border-radius: 10px;
@@ -56,4 +56,11 @@ input[type=text]:focus {
 
  #submit_button:focus {
   border: 3px solid #ccc;
+}
+
+#weather_result {
+  text-align: center;
+  font-size: large;
+  
+
 }

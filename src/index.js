@@ -6,8 +6,7 @@ import app from './app';
 const apps = () => {
   const content = document.getElementById('container');
   content.append(header(), weather());
-  app()
-  
+  app();
 };
 
 

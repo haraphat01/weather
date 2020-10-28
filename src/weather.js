@@ -10,12 +10,12 @@ const weather = () => {
   const formInput = document.createElement('INPUT');
   formInput.setAttribute('type', 'text');
   formInput.setAttribute('placeholder', "pls input the city's name");
-  formInput.classList.add('city');
+  formInput.id = 'city';
   const submit = document.createElement('button');
-  submit.id = 'submit_button';
+  submit.classList.add('submit_button');
   submit.innerHTML = 'Check Weather';
   const result = document.createElement('p');
-  result.classList.add('weather_result');
+  result.id = 'weather_result';
   formContainer.append(formP, formTag, formInput, submit, result);
   return formContainer;
 };
