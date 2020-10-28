@@ -11,12 +11,23 @@ const weather = () => {
   formInput.setAttribute('type', 'text');
   formInput.setAttribute('placeholder', "pls input the city's name");
   formInput.id = 'city';
+  const select = document.createElement('select');
+  select.id = 'unit';
+  const cel = document.createElement('option');
+  const far = document.createElement('option');
+  cel.setAttribute('value', 'metric');
+  cel.innerHTML = 'Celsius';
+  far.setAttribute('value', 'imperial');
+  far.innerHTML = 'Fahrenheit';
+  select.append(cel, far);
+
   const submit = document.createElement('button');
   submit.classList.add('submit_button');
   submit.innerHTML = 'Check Weather';
   const result = document.createElement('p');
   result.id = 'weather_result';
-  formContainer.append(formP, formTag, formInput, submit, result);
+
+  formContainer.append(formP, formTag, formInput, select, submit, result);
   return formContainer;
 };
 export default weather;

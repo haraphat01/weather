@@ -35,14 +35,15 @@ const app = () => {
       e.preventDefault();
       const cityInput = document.getElementById('city');
       const chosenCity = cityInput.value;
-      const apiRequest = `https://api.openweathermap.org/data/2.5/weather?q=${chosenCity}&appid=11d091024281fd0f3a53ff3d3b78c460`;
+      const unitSelect = document.getElementById('unit');
+      const apiRequest = `https://api.openweathermap.org/data/2.5/weather?q=${chosenCity}&appid=11d091024281fd0f3a53ff3d3b78c460&units=${unitSelect.value}`;
       fetch(apiRequest)
         .then((response) => response.json())
-        .catch((error) => ((`${chosenCity} not found`, error)))
         .then((response) => {
           const report = document.getElementById('weather_result');
-          report.textContent = `The weather in ${response.name}  is ${response.weather[0].main}`;
-        });
+          report.textContent = `The weather in ${response.name}  is ${response.weather[0].main} with ${response.main.temp} °`;
+        })
+        .catch((error) => ((`${chosenCity} not found`, error)));
     }
   });
 };
