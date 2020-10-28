@@ -20,8 +20,6 @@ const app = () => {
         .catch((error) => ((`${chosenCity} not found`, error)));
     }
   });
-
-  //  const report = document.getElementById('weather_result');
 };
 
 export default app;
