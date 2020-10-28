@@ -59,7 +59,8 @@ input[type=text]:focus {
 #weather_result {
   text-align: center;
   font-size: large;
-  background-color: burlywood;
+
+  /* background-color: burlywood; */
 }
 
 #unit {

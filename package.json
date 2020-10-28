@@ -6,9 +6,16 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haraphat01/weather"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/haraphat01/weather/issues"
+  },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "css-loader": "^5.0.0",
