@@ -13,6 +13,7 @@ This project development was achieved using the following technologies:
 
 ## Live Demo
 
+https://raw.githack.com/haraphat01/weather/feature/dist/index.html
 
 
 ## Home Page of the Application
@@ -25,7 +26,6 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
     npm
-
     npm install npm@latest -g
 
 #### You should have installed git on your local machine and a text editor of your choice.
