@@ -57,10 +57,13 @@ input[type=text]:focus {
 }
 
 #weather_result {
+  margin-left: 7rem;
+  margin-right: 7rem;
   text-align: center;
   font-size: large;
-
-  /* background-color: burlywood; */
+  height: 5rem;
+  border-radius: 10em;
+  border: 9px solid #ccc;
 }
 
 #unit {

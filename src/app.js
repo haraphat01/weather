@@ -11,11 +11,14 @@ const app = () => {
         .then((response) => response.json())
         .then((response) => {
           const report = document.getElementById('weather_result');
-          const colors = ['blue', 'red', 'yellow', 'pink'];
-          for (let i = 0; i <= colors.length; i = +1) {
-            report.style.backgroundColor = colors[i];
-          }
+
+
           report.textContent = `The weather in ${response.name}  is ${response.weather[0].main} with ${response.main.temp} °`;
+          if (response.weather[0].main === 'Clouds') {
+            report.style.backgroundColor = 'blue';
+          } else if (response.weather[0].main === 'Clear') {
+            report.style.backgroundColor = 'red';
+          } else { report.style.backgroundColor = 'pink'; }
         })
         .catch((error) => ((`${chosenCity} not found`, error)));
     }
