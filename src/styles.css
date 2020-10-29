@@ -71,5 +71,5 @@ input[type=text]:focus {
   display: flex;
   align-self: center;
   margin: 2em;
-  background-color: aqua;
+  background-color: orange;
 }
