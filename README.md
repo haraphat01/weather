@@ -1,4 +1,3 @@
-# weather
 
 
 This is a weather app that is used to check the weather condition of any location, the user also has the opportunity to select Celsius or Fahrenheit.
